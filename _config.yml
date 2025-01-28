@@ -22,13 +22,13 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
-  pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  name             : "Alexander ZhongYu Yue"
+  pronouns         : "He/Him"
+  bio              : "Junior University student with experience working with cloud hosted SQL databases, as well as cloud hosted NoSQL databases such as MongoDB. Currently expanding my outreach towards GraphDBs such as Neo4J, as well as data lake services such as Databricks. Looking to gain internships in the field, as well as gaining more experience in a corporate setting"
+  location         : "Houston, TX"
+  employer         : "Mobile Monitoring Solutions"
+  uri              : "https://www.linkedin.com/in/alexzyue/"
+  email            : "alexanderzyue@gmai.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
