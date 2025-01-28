@@ -8,4 +8,5 @@ redirect_from:
 ---
 
 [Resume](Alex_Y_Resume.pdf)
+[University of Houston CS](https://www.uh.edu/nsm/computer-science/)
 
