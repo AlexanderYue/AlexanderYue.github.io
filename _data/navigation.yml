@@ -6,11 +6,11 @@
 
 main:   
   - title: "Portfolio"
-    url: /portfolio/
+    url: 
         
     
   - title: "CV"
-    url: /files/Alex_Y_Resume_25.pdf
+    url: 
     
   - title: "Guide"
-    url: /markdown/
+    url: 
