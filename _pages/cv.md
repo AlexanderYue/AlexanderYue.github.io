@@ -9,7 +9,7 @@ redirect_from:
 
 {% include base_path %}
 
-**[Download PDF Resume](files/Alex Y Resume 25 (2).pdf)**
+**[Download PDF Resume](files/Alex_Y_Resume.pdf)**
 
 Education
 ======
