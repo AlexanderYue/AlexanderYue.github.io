@@ -1,6 +1,8 @@
 ---
-title: "Portfolio item number 1"
-excerpt: "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+title: "Chiliwack Project"
+excerpt: "Project done for my COSC class Software Design
+          [Chiliwack project video](https://youtu.be/PkIRe9yX56g)  
+          [Chiliwack repository](https://github.com/gnguyen2/Chilliwack)"
 collection: portfolio
 ---
 
