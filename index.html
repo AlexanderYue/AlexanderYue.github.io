@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Alexander Yue — Portfolio & Blog</title>
+  <title>Welcome</title>
   <meta name="description" content="Portfolio and blog of Alexander Yue." />
   <meta name="color-scheme" content="dark">
   <link rel="stylesheet" href="styles.css">
@@ -18,7 +18,7 @@
       </a>
       <nav aria-label="Primary">
         <ul>
-          <li><a href="#about">About</a></li>
+          <li><a href="#aboutme">About</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#blog">Blog</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -30,14 +30,15 @@
   <main id="main" class="container">
 
     <!-- ABOUT -->
-    <h2 class="about">About Me</h2>
+     <section id = aboutme>
+    <sectionHeader>About Me</sectionHeader>
     </style>    
       <div class="card">
-        <p>I’m a Computer Science student with a strong focus on cybersecurity, artificial intelligence, and high-performance computing. My work spans from developing secure software systems to exploring how CUDA and GPU parallelization can accelerate real-world applications like rendering and n-body simulations.
+        <para>I am a Computer Science student with a strong focus on cybersecurity, artificial intelligence, and high-performance computing. My work spans from developing secure software systems to exploring how CUDA and GPU parallelization can accelerate real-world applications like rendering and n-body simulations.
 
             I’ve built projects ranging from a Flask-based admissions system with SQL Server on Azure, to a CUDA-powered circle renderer and particle simulator, to NLP-driven sentiment analysis tools for large-scale datasets. These experiences have sharpened my skills in Python, C++, SQL/NoSQL, and cloud technologies (AWS, Azure), as well as frameworks for machine learning, NLP, and secure system design.
             
-            I’m currently pursuing opportunities to apply my expertise in cybersecurity and AI—particularly in areas like threat detection, OSINT workflows, and AI-driven analytics—while continuing to explore the intersection of parallel computing and security challenges.</p>
+            I’m currently pursuing opportunities to apply my expertise in cybersecurity and AI—particularly in areas like threat detection, OSINT workflows, and AI-driven analytics—while continuing to explore the intersection of parallel computing and security challenges.</para>
       </div>
       <div class="card">
         <h3 class = subtitle>Skills</h3>
@@ -57,37 +58,78 @@
 
     <!-- PROJECTS -->
     <section id="projects">
-      <h2>Projects</h2>
-      <div class="cards">
-        <div class="card">
-          <h3>Portfolio Website</h3>
-          <p class="meta">HTML · CSS · JS</p>
-          <p>A personal website built from scratch to showcase my projects and blog.</p>
+        <sectionHeader>Projects</sectionHeader>
+      <subtitle><i>Click project for github page</i></subtitle>
+      <div>
+        <div>
+          <h3><a href = "https://github.com/AlexanderYue/Natural-Language-Opinion-Search-Engine" target="_blank" >NLP Amazon Review Engine</a></h3>
+          <p><b>Language:</b> Python</p>
+          <p>This project is an Natural Language Processing (NLP)–based search engine designed to extract opinions from Amazon product reviews. Instead of just keyword matching, it focuses on capturing the sentiment and context behind reviews to deliver more meaningful results.</p>
+          <p><strong>Goal:</strong> Allow users to search reviews using natural queries like 
+            “audio quality: poor” or “gps map: useful” and retrieve the most relevant customer feedback.</p>
+            
+            <p><strong>Dataset:</strong> Worked with a preprocessed Amazon review dataset (<code>reviews_segment.pkl</code>).</p>
+            
+            <p><strong>Methods:</strong></p>
+            <ul>
+              <li><strong>Baseline:</strong> A Boolean keyword matching model.</li>
+              <li><strong>M1 (Improved Model):</strong> Enhanced approach with smarter filtering (e.g., sentiment detection).</li>
+              <li><strong>M2 (Best Model):</strong> Incorporated advanced NLP techniques like sentiment analysis, dependency parsing, and semantic similarity scoring.</li>
+            </ul>
+            
+            <p><strong>Evaluation:</strong> Models were evaluated on precision, measuring how accurately the system returned relevant reviews.</p>
+            
+            <p><strong>Tech Stack:</strong> Python, scikit-learn, NLTK/spaCy, and custom NLP pipelines.</p>
         </div>
-        <div class="card">
-          <h3>Blog Platform</h3>
-          <p class="meta">Node.js · Express</p>
-          <p>A simple blog engine where users can post articles and share comments.</p>
-        </div>
-        <div class="card">
-          <h3>Weather App</h3>
-          <p class="meta">React · API Integration</p>
-          <p>An app that fetches real-time weather data and displays it in a clean interface.</p>
-        </div>
-      </div>
-    </section>
+
+
+        <div>
+            <h3>
+              <a href="https://github.com/AlexanderYue/GPU-Project" target="_blank" rel="noopener noreferrer">
+                CUDA Linear Algebra Solver
+              </a>
+            </h3>
+            <p><b>Language:</b> C++ / CUDA</p>
+            <p>This project implements a dense LU decomposition solver in C++/CUDA to accelerate solving systems of linear equations (Ax = b). GPU optimization techniques were explored to improve performance over CPU implementations.</p>
+          
+            <p><strong>Goal:</strong> Implement a parallel LU decomposition solver to efficiently solve dense systems of linear equations on the GPU.</p>
+            
+            <p><strong>Dataset:</strong> Used generated test matrices (3x3, 4x4, 5x5, etc.) to validate correctness and benchmark performance.</p>
+            
+            <p><strong>Methods:</strong></p>
+            <ul>
+              <li><strong>Stage 1 (CPU Baseline):</strong> Implemented serial LU decomposition with forward/backward substitution in C++.</li>
+              <li><strong>Stage 2 (CUDA Parallelization):</strong> Ported LU decomposition to CUDA with row operations and GPU kernels for substitution.</li>
+              <li><strong>Stage 3 (Optimization):</strong> Applied tiling, shared memory, coalesced memory access, and thread/block decomposition to maximize GPU efficiency.</li>
+            </ul>
+            
+            <p><strong>Evaluation:</strong> Benchmarked runtime and scalability, demonstrating significant performance improvements over CPU implementations for larger matrices.</p>
+            
+            <p><strong>Tech Stack:</strong> C++, CUDA, NVIDIA GPU architecture, benchmarking tools.</p>
+          </div>
 
     <!-- BLOG -->
     <section id="blog">
-      <h2>Blog</h2>
-      <div class="cards">
-        <div class="card">
-          <article>
-            <h3><a href="#">Why Simple Sites Win</a></h3>
-            <div class="meta">Aug 18, 2025 · 3 min read</div>
-            <p>Fancy stacks are fun, but HTML + CSS gets you to done faster.</p>
-          </article>
+        <sectionHeader>Blog</sectionHeader>
+        <div class="cards">
+          <div class="card">
+            <article>
+              <h3>Studying for my CompTIA Security+ Certification</h3> 
+              <div class="meta"><i>August 18, 2025</i></div>
+              <div id="blog-post-1" style="white-space: pre-wrap;">Loading...</div>
+            </article>
+          </div>
         </div>
+
+        <script>
+            fetch("blog1.txt")
+              .then(response => response.text())
+              .then(data => {
+                document.getElementById("blog-post-1").innerHTML = data;
+              })
+              .catch(error => console.error("Error loading blog:", error));
+          </script>
+      
         <div class="card">
           <article>
             <h3><a href="#">Designing for Accessibility</a></h3>
